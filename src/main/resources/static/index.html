@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>s354358</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-info">
+    <div class="container">
+      <div class="text-primary">
+        <h1 class="page-header">
+          Bestilling av kinobiletter
+          <div class="pull-right">
+           
+          </div>
+        </h1>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+        <form id="form">
+          <div class="form-group">
+            <label for="filmer" class="pull-left text-primary">Velg film:</label>
+            <select name="film" id="film" required class="pull-right">
+              <option value="filmer" selected disabled>Velg film her</option>
+              <option value="batman">Batman</option>
+              <option value="wonderwoman">Wonderwoman</option>
+              <option value="spiderman">Spiderman</option>
+            </select>
+          </div>
+          <br />
+          <br />
+
+          <div class="form-group">
+            <label for="antall" class="pull-left text-primary">Antall</label>
+            <input
+              type="number"
+              id="antall"
+              name="antall"
+              min="0"
+              required
+              class="pull-right"
+            />
+          </div>
+
+          <br />
+          <br />
+
+          <div class="form-group">
+            <label for="fnavn" class="text-primary">Fornavn</label>
+            <input
+              type="text"
+              id="fnavn"
+              name="fnavn"
+              required
+              class="pull-right"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="enavn" class="text-primary">Etternavn</label>
+            <input
+              type="text"
+              id="enavn"
+              name="enavn"
+              required
+              class="pull-right"
+            />
+          </div>
+          <div class="form-group">
+            <label for="telefon" class="text-primary">Telefon Nummer</label>
+            <input
+              type="text"
+              id="telefonnr"
+              name="telefonnr"
+              required
+              class="pull-right"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Epost" class="text-primary">Epost</label>
+            <input
+              type="email"
+              id="epost"
+              name="epost"
+              required
+              class="pull-right"
+            />
+          <p></p>
+          <button type="submit" class="btn btn-primary">Kjøp billett</button>
+          <button type="reset" class="btn btn-primary"> Slett alle billetter </button>
+        </form>
+      </div>
+      <p id="melding" class="text-primary"></p>
+    </div>
+    <br />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
